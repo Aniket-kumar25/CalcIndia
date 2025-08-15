@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CalcIndia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator" id="calc">
+    <div class="topbar">
+      <div class="title">CalcIndia</div>
+      <div class="toggle">
+        <label for="mode">Scientific</label>
+        <input type="checkbox" id="mode" aria-label="Scientific mode toggle">
+      </div>
+    </div>
+
+    <div class="screen" id="screen">0</div>
+
+    <!-- Scientific rows (hidden until toggle is ON) -->
+    <div class="buttons sci-row">
+      <button class="btn sci" data-func="degRadToggle" title="(Degrees)">DEG</button>
+      <button class="btn sci" data-insert="(">(</button>
+      <button class="btn sci" data-insert=")">)</button>
+      <button class="btn sci" data-func="factorial">n!</button>
+    </div>
+
+    <div class="buttons sci-row">
+      <button class="btn sci" data-insert="sin(">sin</button>
+      <button class="btn sci" data-insert="cos(">cos</button>
+      <button class="btn sci" data-insert="tan(">tan</button>
+      <button class="btn sci" data-insert="^">xʸ</button>
+    </div>
+
+    <div class="buttons sci-row">
+      <button class="btn sci" data-insert="sqrt(">√</button>
+      <button class="btn sci" data-insert="ln(">ln</button>
+      <button class="btn sci" data-insert="log(">log</button>
+      <button class="btn sci" data-insert="^2">x²</button>
+    </div>
+
+    <div class="buttons sci-row">
+      <button class="btn sci" data-insert="π">π</button>
+      <button class="btn sci" data-insert="ℯ">e</button>
+      <button class="btn sci" data-insert=",">,</button>
+      <button class="btn sci" data-value="%">%</button>
+    </div>
+
+    <!-- Basic rows (always visible) -->
+    <div class="buttons">
+      <button class="btn" data-action="clear">C</button>
+      <button class="btn" data-action="backspace">←</button>
+      <button class="btn" data-value="/">÷</button>
+      <button class="btn" data-value="*">×</button>
+      <button class="btn" data-value="-">−</button>
+
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn" data-value="+">+</button>
+
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn equal" data-action="equals">=</button>
+
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn" data-value=".">.</button>
+
+      <button class="btn zero" data-value="0">0</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
