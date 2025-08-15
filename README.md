@@ -12,7 +12,7 @@ Percent Calculations: Supports percentages in expressions
 Constants: π, e
 Responsive Design: Works smoothly on desktop, tablet, and mobile devices
 Modern UI: Glassmorphism style with interactive buttons and animations
-Independent Mode Toggle: Switch between basic and scientific modes# CalcIndia
+Independent Mode Toggle: Switch between basic and scientific modes
 
 Technologies Used
 
